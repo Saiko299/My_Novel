@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
+
+    <ImageView
+        android:id="@+id/novel_cover"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Cover Novel"
+        android:src="@drawable/roshidere" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/novel_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Novel"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/novel_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi singkat novel..."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <!-- Genre Tags (warna sama tapi menarik) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/genre1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Romance"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_genre_tag"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:layout_marginEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/genre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="School"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_genre_tag"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/novel_score"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:text="8.7"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:background="#FFD700"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>
